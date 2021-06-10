@@ -38,7 +38,7 @@ classifier.add(Dense(1, kernel_initializer='uniform', activation='sigmoid'))
 # structure the ANN
 classifier.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
 
-classifier.fit(x_train, y_train, batch_size=10, epochs=1000)
+classifier.fit(x_train, y_train, batch_size=10, epochs=10)
 
 y_pred = classifier.predict(x_test)
 
